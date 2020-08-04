@@ -1,0 +1,16 @@
+.labelColumn{
+    background-color: #BCF8FB;
+    padding-right: 1em;
+    line-height: 200%;
+}
+
+.smallHeading{
+    border-radius: 0px;
+    margin-top: 2em;
+    /*float: left;*/
+}
+
+table tr td:first-child
+{
+    font-weight: bold;
+}

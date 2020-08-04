@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xlns:th="http://www.thymeleaf.org" xmlns:xlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/static/css/quizmarker.css" rel="stylesheet"/>
+
+    <title>Course List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>My contact list - Thymeleaf</h1>
+            <table border="1" class="table">
+                <tr>
+                    <th>Course Title</th>
+                    <th>Description</th>
+                    <th>Credit Unit</th>
+                    <th>Pass Mark</th>
+                </tr>
+                <tr th:each="course: ${courses}">
+                    <td th:text="${course.title}">Title</td>
+                    <td th:text="${course.description}">Description</td>
+                    <td th:text="${course.cu}">Credit Unit</td>
+                    <td th:text="${course.passmark}">Passmark</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
